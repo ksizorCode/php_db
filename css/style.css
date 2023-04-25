@@ -9,12 +9,24 @@
 body{
     font-family: var(--ff);
     max-width:var(--maw);
+    margin: var(--m) auto;
     padding: var(--m);
     background: var(--c);
 }
 
 header, main, footer{
     padding: var(--m);
-    background-color: var(--c);
+    background-color: var(--l);
     border-radius: var(--m);
+    margin: var(--m);
+}
+
+a{ color:var(--c); text-decoration:none;}
+
+header ul,
+footer ul{
+    list-style: none;
+    padding-left: 0;
+    gap:var(--m);
+    display: flex;
 }
