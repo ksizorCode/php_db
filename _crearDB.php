@@ -27,6 +27,8 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 
 ?>
+<p>Siguiente paso:</p>
+<a href="_crearTabla.php" class="btn">Crear Tabla alumnos</a>
 
-
+<?php include 'fragmentos/_footer.php';?>
 

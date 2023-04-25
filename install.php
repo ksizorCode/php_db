@@ -12,9 +12,9 @@
     </ul>
 
     <ol>
-        <li><a href="_crearDB.php">Crear DB Dicampus</a></li>
-        <li><a href="_crearTabla.php">Crear Tabla alumnos</a></li>
-        <li><a href="_crearDatos.php">Crear Llenar tabla de datos</a></li>
+        <li><a class="btn" href="_crearDB.php">Crear DB Dicampus</a></li>
+        <li><a class="btn" href="_crearTabla.php">Crear Tabla alumnos</a></li>
+        <li><a class="btn" href="_crearDatos.php">Llenar Tabla de datos</a></li>
     </ol>
 <p>Hemos crado los 12 avatares que están en la carepta img gracias a <a href="https://getavataaars.com/">esta web</a></p>
     <p>También puedes <a href="_borrarDB.php">Forzar el borrado de la base de datos Dicampus</a>.</p>

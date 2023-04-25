@@ -23,6 +23,8 @@ header, main, footer{
 
 a{ color:var(--c); text-decoration:none;}
 
+p a:hover{ text-decoration: underline;}
+
 img{ max-width: 100%;}
 
 header ul,
@@ -44,5 +46,35 @@ footer ul{
 
 
 
-/* Tabla de la base de datos*/
-table img{ max-width: 80px;}
+/* Tabla */
+table img{ max-width: 20px; transition: 0.3s;}
+
+tr:nth-child(even) {
+    background-color: #EEE;
+  }
+
+tr:hover{
+    background: var(--c);
+}
+
+tr:hover td img{
+    max-width:60px;
+}
+
+.btn{
+    padding: calc(var(--m));
+    border-radius: var(--m);
+    background-color:none;
+    color:var(--c);
+    text-align: center;
+    display: inline-block;
+    margin:calc(var(--m)/3) 0;
+    border:1px solid var(--c);
+}
+
+.btn:hover{
+ 
+    background-color:var(--c);
+    color:var(--l);
+
+}

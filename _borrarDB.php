@@ -21,7 +21,7 @@ $sql = "DROP DATABASE IF EXISTS dicampus";
 
 // Ejecutar la consulta SQL
 if ($conn->query($sql) === TRUE) {
-  echo "Base de datos eliminada correctamente";
+  echo "<div class='alert'>Base de datos 'dicampus' eliminada correctamente</div>";
 } else {
   echo "Error al eliminar la base de datos: " . $conn->error;
 }
@@ -29,4 +29,7 @@ if ($conn->query($sql) === TRUE) {
 // Cerrar la conexión
 $conn->close();
 ?>
+
+<a href="install.php" class="btn">Ir a Instalar</a>
+<p>para volver a instalar con los valores de fábrica.</p>
 

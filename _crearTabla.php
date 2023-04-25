@@ -36,3 +36,8 @@ if ($conn->query($sql) === TRUE) {
 // Cerrar la conexión
 $conn->close();
 ?>
+
+<p>Siguiente paso:</p>
+<a href="_crearDatos.php" class="btn">Llenar Tabla de datos</a>
+
+<?php include 'fragmentos/_footer.php';?>
