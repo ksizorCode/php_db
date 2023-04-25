@@ -23,6 +23,8 @@ header, main, footer{
 
 a{ color:var(--c); text-decoration:none;}
 
+img{ max-width: 100%;}
+
 header ul,
 footer ul{
     list-style: none;
@@ -39,3 +41,8 @@ footer{
 footer ul{
     justify-content: center;
 }
+
+
+
+/* Tabla de la base de datos*/
+table img{ max-width: 80px;}
