@@ -1,4 +1,4 @@
-<?php $titulo="Instalación de Base de Datos"; ?>
+<?php $titulo="Borrar Base de Datos"; ?>
 <?php include 'fragmentos/_header.php';?>
 <h1><?php echo $titulo;?></h1>
 
@@ -16,17 +16,17 @@ if ($conn->connect_error) {
   die("Conexión fallida: " . $conn->connect_error);
 }
 
-// Crear la base de datos si no existe
-$sql = "CREATE DATABASE IF NOT EXISTS dicampus";
+// Consulta SQL para borrar la base de datos "dicampus" y todo su contenido
+$sql = "DROP DATABASE IF EXISTS dicampus";
+
+// Ejecutar la consulta SQL
 if ($conn->query($sql) === TRUE) {
-  echo '<div class="alert">Base de datos "dicampus" se ha creado correctamente, o ya existía.</div> <a href="install.php">Volver al index</a>';
+  echo "Base de datos eliminada correctamente";
 } else {
-  echo "Error creando la base de datos: " . $conn->error;
+  echo "Error al eliminar la base de datos: " . $conn->error;
 }
+
 // Cerrar la conexión
 $conn->close();
-
 ?>
-
-
 

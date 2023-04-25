@@ -1,5 +1,7 @@
+<?php $titulo="Inserción de Datos en Tabla"; ?>
+<?php include 'fragmentos/_header.php';?>
 
-
+<h1><?php echo $titulo;?></h1>
 <?php
 $servername = "localhost";
 $username = "root";
@@ -15,7 +17,7 @@ if ($conn->connect_error) {
 }
 
 // Generar datos aleatorios y ejecutar las consultas SQL para insertar las filas
-for ($i = 1; $i <= 8; $i++) {
+for ($i = 1; $i <= 12; $i++) {
   // Generar nombres y apellidos aleatorios
   $nombre = "Alumno " . $i;
   $apellidos = "Apellido " . $i;

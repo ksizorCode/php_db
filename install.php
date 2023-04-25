@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instalar</title>
-</head>
-<body>
+<?php $titulo="Reseteo"; ?>
+<?php include 'fragmentos/_header.php';?>
+
     <h1>Reseteao / Instalación</h1>
     <p>Esta opción reseteará el espacio de trabajo creando una base de datos llamada dicampus e insertando dentro una tabla alumno con datos aleatorios de alumnos. Siga los siguientes pasos:</p>
     
@@ -22,6 +16,7 @@
         <li><a href="_crearTabla.php">Crear Tabla alumnos</a></li>
         <li><a href="_crearDatos.php">Crear Llenar tabla de datos</a></li>
     </ol>
+<p>Hemos crado los 12 avatares que están en la carepta img gracias a <a href="https://getavataaars.com/">esta web</a></p>
+    <p>También puedes <a href="_borrarDB.php">Forzar el borrado de la base de datos Dicampus</a>.</p>
 
-</body>
-</html>
+    <?php include 'fragmentos/_footer.php';?>
