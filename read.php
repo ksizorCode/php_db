@@ -43,7 +43,7 @@ if ($resultado->num_rows > 0) {
             <td>" . $fila["apellidos"] . "</td>
             <td>" . $fila["ciudad"] . "</td>
             <td>" . $fila["fecha_nacimiento"] . "</td>
-            <td><img src='img/" . $fila["foto"] . "' width='100'></td>
+            <td><img src='img/" . $fila["foto"] . "'></td>
           </tr>";
   }
   

@@ -33,7 +33,7 @@ for ($i = 1; $i <= 12; $i++) {
   $fecha_nacimiento = date('Y-m-d', mktime(0, 0, 0, $mes, $dia, $anio));
   
   // Generar nombres de archivo aleatorios para las fotos
-  $foto = "foto" . $i . ".jpg";
+  $foto = "foto" . $i . ".png";
   
   // Consulta SQL para insertar una fila en la tabla "alumnos"
   $sql = "INSERT INTO alumnos (nombre, apellidos, ciudad, fecha_nacimiento, foto)
