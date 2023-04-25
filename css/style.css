@@ -1,0 +1,20 @@
+:root{
+    --ff:sans-serif;
+    --m:20px;
+    --maw:960px;
+    --c:coral;
+    --l:white;
+    --d:black;
+}
+body{
+    font-family: var(--ff);
+    max-width:var(--maw);
+    padding: var(--m);
+    background: var(--c);
+}
+
+header, main, footer{
+    padding: var(--m);
+    background-color: var(--c);
+    border-radius: var(--m);
+}
