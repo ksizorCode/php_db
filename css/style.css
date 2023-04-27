@@ -71,10 +71,15 @@ tr:hover td img{
     max-width:60px;
 }
 
+tr:hover a{
+    color:var(--l);
+}
+
+a button,
 .btn{
     padding: calc(var(--m)/2) var(--m);
     border-radius: var(--m);
-    background-color:none;
+    background:none;
     color:var(--c);
     text-align: center;
     display: inline-block;
@@ -84,6 +89,7 @@ tr:hover td img{
     transition:0.3s;
 }
 
+a:hover button,
 .btn:hover{
  
     background-color:var(--c);
@@ -91,4 +97,24 @@ tr:hover td img{
 
 }
 
+.botonera{
+    display:flex;
+    gap:10px;
+    justify-content:end;
+}
+
 i{ padding-right:10px;}
+
+
+
+main .ficha {display:flex;gap:20px;border-radius:var(--m);border: solid 1px var(--c);padding:var(--m);box-shadow:0 0 20px var(--c);margin-bottom: var(--m);
+            animation: anim1 1s; position:relative;}
+main .ficha .foto{ width: 200px !important;}
+
+h1 span, p span{ color:var(--c);}
+
+
+@keyframes anim1{
+    0%{ opacity:0; top:40px;}
+    100%{ opacity:1; top:0;}
+}
