@@ -408,13 +408,13 @@ for ($i = 1; $i <= 42; $i++) {
   $ciudad = $ciudades[rand(0,count($ciudades)-1)];
 
   // Generar fechas de nacimiento aleatorias
-  $anio = rand(1990, 2005);
+  $anio = rand(1960, 2005);
   $mes = rand(1, 12);
   $dia = rand(1, 28);
   $fecha_nacimiento = date('Y-m-d', mktime(0, 0, 0, $mes, $dia, $anio));
   
   // Generar nombres de archivo aleatorios para las fotos
-  $foto = "foto" . rand(1,16) . ".png";
+  $foto = "foto" . rand(0,30) . ".png";
   
   // Consulta SQL para insertar una fila en la tabla "alumnos"
   $sql = "INSERT INTO alumnos (nombre, apellidos, ciudad, fecha_nacimiento, foto)

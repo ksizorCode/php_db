@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php
+//obtener_edad_segun_fecha($fecha_nacimiento)
+function obtener_edad_segun_fecha($fecha_nacimiento)
+{
+    $nacimiento = new DateTime($fecha_nacimiento);
+    $ahora = new DateTime(date("Y-m-d"));
+    $diferencia = $ahora->diff($nacimiento);
+    return $diferencia->format("%y");
+}
+
+?><!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
