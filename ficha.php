@@ -41,7 +41,6 @@ if ($resultado->num_rows > 0) {
 ?>
 <?php $titulo=$fila["nombre"]." ".$fila["apellidos"]." ficha."; ?>
 <?php include 'fragmentos/_header.php';?>
-<h1><?php echo $titulo;?></h1>
 
 
 <div class="ficha">
@@ -50,11 +49,12 @@ if ($resultado->num_rows > 0) {
 </div>
 
 <div class="datos">
-  <p> ID: <? echo $fila["id"];?></p>
   <h1><span><?echo $fila["nombre"]."</span> ".$fila["apellidos"]; ?></h1>
-
-  <p>Fecha Nacimiento: <span><? echo $fila["fecha_nacimiento"];?></span></p>
-  <p>Ciudad: <span><? echo $fila["ciudad"];?></span></p>
+  
+  <p><span>Fecha Nacimiento:</span> <? echo $fila["fecha_nacimiento"];?></p>
+  <p><span>Ciudad:</span> <? echo $fila["ciudad"];?></p>
+  <p><span>Edad:</span> <? echo obtener_edad_segun_fecha($fila["fecha_nacimiento"]);?></p>
+  <p><span>ID:</span> <? echo $fila["id"];?></p>
 
 </div>
 
